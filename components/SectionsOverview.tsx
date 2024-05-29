@@ -9,7 +9,7 @@ export default function SectionsOverview() {
 
   return (
     <div className="sticky top-20 flex h-fit flex-col gap-4 rounded bg-slate-500 p-5 text-white">
-      Sections Overview
+      <h2>Sections Overview</h2>
       <div className="flex flex-col gap-2">
         {sections.map(({ id, title }) => {
           return (

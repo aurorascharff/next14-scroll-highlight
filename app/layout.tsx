@@ -5,8 +5,8 @@ import type { Metadata } from 'next';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  description: 'React Scroll Highlight',
-  title: 'Next 14 app with React Scroll Highlight',
+  description: 'Next 14 Scroll Highlight',
+  title: 'Next 14 app with Scroll Highlight',
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
