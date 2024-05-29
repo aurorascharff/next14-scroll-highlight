@@ -4,7 +4,7 @@ import SectionsOverview from '@/components/SectionsOverview';
 
 export default function Home() {
   return (
-    <div className="grid place-content-center">
+    <div className="flex justify-center p-20">
       <div className="flex flex-row gap-10">
         <SectionsOverview />
         <Sections />

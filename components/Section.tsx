@@ -12,10 +12,10 @@ type Props = {
 
 export default function Section({ children, sectionId, className, ...otherProps }: Props) {
   const [ref] = useSectionIsInView(sectionId);
-  const classNames = cn(className, 'p-40 rounded bg-slate-300');
+  const classNames = cn(className, 'p-64 rounded bg-slate-300');
 
   return (
-    <div ref={ref} className={classNames} {...otherProps}>
+    <div id={sectionId} ref={ref} className={classNames} {...otherProps}>
       {children}
     </div>
   );

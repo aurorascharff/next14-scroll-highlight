@@ -1,14 +1,18 @@
 import React from 'react';
+import { sections } from '@/constants/sections';
 import Section from './Section';
 
 export default function Sections() {
   return (
     <div className="flex flex-col gap-10">
-      <Section sectionId="section-1">Section 1</Section>
-      <Section sectionId="section-2">Section 2</Section>
-      <Section sectionId="section-3">Section 3</Section>
-      <Section sectionId="section-4">Section 4</Section>
-      <Section sectionId="section-5">Section 5</Section>
+      {sections.map(({ id, title, description }) => {
+        return (
+          <Section key={id} sectionId={id}>
+            <h2>{title}</h2>
+            <p>{description}</p>
+          </Section>
+        );
+      })}
     </div>
   );
 }

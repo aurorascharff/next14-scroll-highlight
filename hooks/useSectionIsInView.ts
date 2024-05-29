@@ -9,7 +9,7 @@ export function useSectionIsInView(sectionId: string) {
         setSectionInView(sectionId);
       }
     },
-    threshold: 0.4,
+    threshold: 0.8,
   });
 
   return [ref];
