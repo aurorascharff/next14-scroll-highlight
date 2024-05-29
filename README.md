@@ -1,4 +1,6 @@
-# Next 14 app to demonstrate Scroll Highlighting
+# Next 14 App with Scroll Highlighting
+
+Using Next.js 14, this app demonstrates how to highlight the current section in a navigation bar as the user scrolls through the page.
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
