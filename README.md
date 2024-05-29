@@ -1,4 +1,4 @@
-# Next 13 starter project with ESLint, Prettier and Tailwind set up
+# Next 14 app to demonstrate React Scroll Highlighting
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
