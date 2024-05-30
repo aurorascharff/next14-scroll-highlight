@@ -1,7 +1,7 @@
 import { useInView } from 'react-intersection-observer';
 import { useSectionStore } from '@/store/sectionStore';
 
-export function useSectionIsInView(sectionId: string) {
+export function useSectionIsInView(sectionId: string, threshold = 0.5) {
   const { setSectionInView } = useSectionStore();
   const { ref } = useInView({
     onChange: inView => {
@@ -9,7 +9,7 @@ export function useSectionIsInView(sectionId: string) {
         setSectionInView(sectionId);
       }
     },
-    threshold: 0.8,
+    threshold,
   });
 
   return [ref];

@@ -1,8 +1,27 @@
 'use client';
 
+const sections = [
+  {
+    id: 'home',
+    title: 'Home',
+  },
+  {
+    id: 'about',
+    title: 'About',
+  },
+  {
+    id: 'projects',
+    title: 'Projects',
+  },
+  {
+    id: 'contact',
+    title: 'Contact',
+  },
+];
+
 import React from 'react';
-import { sections } from '@/constants/sections';
 import { useSectionStore } from '@/store/sectionStore';
+import { cn } from '@/utils/cn';
 
 export default function SectionsOverview() {
   const { sectionInView } = useSectionStore();
@@ -13,7 +32,11 @@ export default function SectionsOverview() {
       <div className="flex flex-col gap-2">
         {sections.map(({ id, title }) => {
           return (
-            <a className={sectionInView === id ? 'font-bold' : ''} key={id} href={`#${id}`}>
+            <a
+              className={cn(sectionInView === id && 'outline outline-white', 'rounded p-2 hover:bg-slate-400')}
+              key={id}
+              href={`#${id}`}
+            >
               {title}
             </a>
           );
